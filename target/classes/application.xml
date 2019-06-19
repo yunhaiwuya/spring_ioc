@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="student" class="com.spring.bean.Student">
+        <property name="name" value="Tom" />
+        <property name="grade" value="大三" />
+        <property name="major" value="计算机科学与技术" />
+    </bean>
+    <bean id="studentService" class="com.spring.service.StudentService">
+        <property ref="student" />
+    </bean>
+</beans>
